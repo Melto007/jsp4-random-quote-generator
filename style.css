@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #02B290;
+    --white-color: #fff;
+    --black-color: #000;
+    --gray-color: #758283;
+    --main-color: #12B0E8;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.quotes-container {
+    width: 19rem;
+    height: 100%;
+    background-color: var(--white-color);
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 0.5rem 1rem var(--black-color);
+}
+
+.quotes-container h1 {
+    font-family: 'Montserrat',sans-serif;
+    margin: 1rem;
+}
+
+.quotes-content {
+    margin-bottom: 1rem;
+    font-family: 'Montserrat',sans-serif;
+    border-bottom-style: solid;
+    border-color: var(--main-color);
+    border-width: 1px;
+    border-top-style: solid;
+    border-width: 1px;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.quotes-content h1 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.quotes-content p {
+    font-weight: 500;
+}
+
+.quotes-content .fa-solid {
+    font-size: 1rem;
+    color: var(--gray-color);
+}
+
+.quotes-buttons {
+    text-align: end;
+}
+
+.btn {
+    padding: 0.4rem 0.4rem;
+    border: none;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    cursor: pointer;
+    border-radius: 0.4rem;
+}
+
+@media screen and (min-width: 768px) {
+    .quotes-container {
+        width: 40rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .quotes-container {
+        width: 35rem;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .quotes-container {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .quotes-container {
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .quotes-container {
+        width: 22rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .quotes-container {
+        width: 18rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .quotes-container {
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .quotes-container {
+        width: 12rem;
+    }
+}
